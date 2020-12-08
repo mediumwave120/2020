@@ -6,11 +6,15 @@
 ### 3.直接赋值粘贴 .ssh的文件会破坏格式 输入命令
 `clip < ~/.ssh/id_rsa.pub`
 ### 4.配置用户和邮箱
-`$ git config --global user.name "your name"`
-`$ git config --global user.email "your_email@youremail.com"`
+```
+$ git config --global user.name "your name"
+$ git config --global user.email "your_email@youremail.com"
+```
 ### 5.解决Github每次提交都要输入用户名和密码
-`git remote rm origin    ` 删除名为origin` 的远程库
-`git remote add origin git@github.com:你的用户名/你的仓库名.git`
+```
+git remote rm origin     删除名为origin` 的远程库
+git remote add origin git@github.com:你的用户名/你的仓库名.git
+```
 
 ### 使用
 ```
