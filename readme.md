@@ -1,4 +1,5 @@
 ## github 使用
+### 创建
 ### 1.创建SSH Key。把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可
 `$ ssh-keygen -t rsa -C "youremail@xxx.com"`
 ### 2.这个文件在当前系统用户下面
@@ -10,3 +11,13 @@
 ### 5.解决Github每次提交都要输入用户名和密码
 `git remote rm origin    ` 删除名为origin` 的远程库
 `git remote add origin git@github.com:你的用户名/你的仓库名.git`
+
+### 使用
+```
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mediumwave120/2020.git
+git push -u origin main
+```
